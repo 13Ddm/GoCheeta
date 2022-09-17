@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+.avatar {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.login-card{
+	position:relative;
+	float:left;	
+}
+
+.admincard{
+	width:75%;
+	height:auto;
+	background-color:teal;
+	border:1px solid black;	
+}

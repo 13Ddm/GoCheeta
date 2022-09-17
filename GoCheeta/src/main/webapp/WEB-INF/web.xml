@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+	<!--admin login-->
+	<servlet>
+		<servlet-name>adminlogin</servlet-name>
+		<servlet-class>service.login.adminLoginServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>adminlogin</servlet-name>
+		<url-pattern>/adminlogin</url-pattern>
+	</servlet-mapping>
+	
+	<!--admin update-->
+	<servlet>
+		<servlet-name>updateAdmin</servlet-name>
+		<servlet-class>com.admin.AdminUpdateServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>updateAdmin</servlet-name>
+		<url-pattern>/updateAdmin</url-pattern>
+	</servlet-mapping>
+	
+	<!--add branch-->
+	<servlet>
+		<servlet-name>addBranch</servlet-name>
+		<servlet-class>com.branch.BranchAddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addBranch</servlet-name>
+		<url-pattern>/addBranch</url-pattern>
+	</servlet-mapping>
+	
+	<!--delete branch-->
+	<servlet>
+		<servlet-name>deleteBranch</servlet-name>
+		<servlet-class>com.branch.BranchDeleteServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>deleteBranch</servlet-name>
+		<url-pattern>/deleteBranch</url-pattern>
+	</servlet-mapping>
+
+	<!--customer login-->
+	<servlet>
+		<servlet-name>cuslogin</servlet-name>
+		<servlet-class>service.login.customerLoginServlert</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>cuslogin</servlet-name>
+		<url-pattern>/cuslogin</url-pattern>
+	</servlet-mapping>
+	
+	<!--add customer-->
+	<servlet>
+		<servlet-name>addCustomer</servlet-name>
+		<servlet-class>com.customer.CustomerAddServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>addCustomer</servlet-name>
+		<url-pattern>/addCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<!--update customer-->
+	<servlet>
+		<servlet-name>updateCustomer</servlet-name>
+		<servlet-class>com.customer.CustomerUpdateServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>updateCustomer</servlet-name>
+		<url-pattern>/updateCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<!--delete customer-->
+	<servlet>
+		<servlet-name>deleteCustomer</servlet-name>
+		<servlet-class>com.customer.CustomerDeleteServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>deleteCustomer</servlet-name>
+		<url-pattern>/deleteCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<!--login driver-->
+	<servlet>
+		<servlet-name>driverLogin</servlet-name>
+		<servlet-class>service.login.driverLoginServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>driverLogin</servlet-name>
+		<url-pattern>/driverLogin</url-pattern>
+	</servlet-mapping>
+	
+	<!--insert driver-->
+	<servlet>
+		<servlet-name>addDriver</servlet-name>
+		<servlet-class>com.driver.DriverAddServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>addDriver</servlet-name>
+		<url-pattern>/addDriver</url-pattern>
+	</servlet-mapping>
+	
+	<!--delete driver-->
+	<servlet>
+		<servlet-name>deleteDriver</servlet-name>
+		<servlet-class>com.driver.DriverDeleteServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>deleteDriver</servlet-name>
+		<url-pattern>/deleteDriver</url-pattern>
+	</servlet-mapping>
+	
+	<!--update driver-->
+	<servlet>
+		<servlet-name>updateDriver</servlet-name>
+		<servlet-class>com.driver.DriverUpdateServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>updateDriver</servlet-name>
+		<url-pattern>/updateDriver</url-pattern>
+	</servlet-mapping>
+	
+	<!--add type-->
+	<servlet>
+		<servlet-name>addType</servlet-name>
+		<servlet-class>com.type.TypeAddServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>addType</servlet-name>
+		<url-pattern>/addType</url-pattern>
+	</servlet-mapping>
+	
+	<!--update type-->
+	<servlet>
+		<servlet-name>updateType</servlet-name>
+		<servlet-class>com.type.TypeUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateType</servlet-name>
+		<url-pattern>/updateType</url-pattern>
+	</servlet-mapping>
+	
+	<!--delete type-->
+	<servlet>
+		<servlet-name>deleteType</servlet-name>
+		<servlet-class>com.type.TypeDeleteServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>deleteType</servlet-name>
+		<url-pattern>/deleteType</url-pattern>
+	</servlet-mapping>
+	
+	<!--add vehicle-->
+	<servlet>
+		<servlet-name>addVehicle</servlet-name>
+		<servlet-class>com.vehicle.VehicleAddServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>addVehicle</servlet-name>
+		<url-pattern>/addVehicle</url-pattern>
+	</servlet-mapping>
+	
+	<!--update vehicle-->
+	<servlet>
+		<servlet-name>updateVehicle</servlet-name>
+		<servlet-class>com.vehicle.VehicleUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateVehicle</servlet-name>
+		<url-pattern>/updateVehicle</url-pattern>
+	</servlet-mapping>
+	
+	<!--delete vehicle-->
+	<servlet>
+		<servlet-name>deleteVehicle</servlet-name>
+		<servlet-class>com.vehicle.VehicleDeleteServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>deleteVehicle</servlet-name>
+		<url-pattern>/deleteVehicle</url-pattern>
+	</servlet-mapping>
+	
+	<!--add booking-->
+	<servlet>
+		<servlet-name>addBooking</servlet-name>
+		<servlet-class>com.booking.BookingAddServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>addBooking</servlet-name>
+		<url-pattern>/addBooking</url-pattern>
+	</servlet-mapping>
+	
+	<!--booking feedback-->
+	<servlet>
+		<servlet-name>bookingfeedback</servlet-name>
+		<servlet-class>com.booking.BookingFeedbackServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>bookingfeedback</servlet-name>
+		<url-pattern>/bookingfeedback</url-pattern>
+	</servlet-mapping>
+	
+	<!--booking feedback-->
+	<servlet>
+		<servlet-name>setStatus</servlet-name>
+		<servlet-class>com.booking.BookingUpdateServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>setStatus</servlet-name>
+		<url-pattern>/setStatus</url-pattern>
+	</servlet-mapping>
+	
+	<!--booking delete-->
+	<servlet>
+		<servlet-name>deletebooking</servlet-name>
+		<servlet-class>com.booking.BookingDeleteServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>deletebooking</servlet-name>
+		<url-pattern>/deletebooking</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
+

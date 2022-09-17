@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+.aboutus{
+	height:600px;
+	width:100%;
+}
+.about-card{
+    width: 600px;
+    height: 500px;
+    background-color: #ffd90048;
+    position: relative;
+    float: left;
+    left: 150px;
+    border-radius: 20px;
+}
+
+.about-card:first-child{
+    left:50px;
+}

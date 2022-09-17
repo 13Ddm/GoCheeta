@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+.login{
+	width : 50%;
+    margin:0px auto;
+    height:100px;
+}
+.login input{
+	border:0.5px solid black;
+}
+.login-out{
+    width : 50%;
+    margin:0px auto;
+    background-color: rgba(85, 177, 168, 0.153);
+    border-radius: 10px;
+    height:600px;
+}
+
